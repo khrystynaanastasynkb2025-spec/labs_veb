@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моє резюме</title>
+
+    <!-- зовнішній спосіб підключення стилів -->
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <!-- внутрішній спосіб підключення стилів -->
+    <style>
+        .banner-text {
+            text-align: center;
+            font-size: 13px;
+            color: #b3b3b3;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="resume-wrapper">
+        <!-- Використання ID та вбудований спосіб стилізації -->
+        <header id="main-header">
+            <h1>Моє резюме</h1>
+            <p style="font-weight: bold; font-size: 18px; color: #d7bde2;">Христина Анастасин</p>
+            <p>Студент, Веб-розробник</p>
+        </header>
+
+        <main class="content-flex">
+            <section class="card-section">
+                <h1>Про мене</h1>
+                <p>Захоплююся програмуванням та дизайном інтерфейсів.
+                    Постійно вдосконалюю свої навички, вирішую практичні завдання.
+                    Вивчаю Python, C#, Html та CSS.
+                Зацікавлена у розвитку в сфері Веб-розробки</p>
+            </section>
+
+            <!-- контейнер який ставить "Освіта" та "Навички" поруч -->
+            <div class="row-flex">
+                <section class="card-section">
+                    <h2>Освіта</h2>
+                    <ul>
+                        <li>Університет: НУ "Львівська політехніка"</li>
+                        <li>Спеціальність: "Кібербезпека"</li>
+                    </ul>
+                </section>
+
+                <section class="card-section">
+                    <h2>Досвід та навички</h2>
+                    <ul>
+                        <li>Розробник початківець</li>
+                        <li>Навички роботи з GitHub</li>
+                        <li>Активно набуваю практичний досвід при виконанні лабораторних робіт</li>
+                    </ul>
+                </section>
+            </div>
+
+            <!-- блок для перевірки селектора атрибута та фокусу -->
+            <section class="card-section">
+                <h2>Контактна форма</h2>
+                <label for="user-input">Введіть текст:</label>
+                <input type="text" id="user-input" placeholder="Перевірка селектора атрибута та фокусу...">
+            </section>
+        </main>
+
+        <footer>
+            <p>Контакти: khrystyna.anastasyn.kb.2025@lpnu.ua | <a href="https://github.com/khrystynaanastasynkb2025-spec" target="_blank">GitHub Profile</a></p>
+        </footer>
+    </div>
+
+</body>
+</html>
