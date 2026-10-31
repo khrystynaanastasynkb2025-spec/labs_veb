@@ -149,3 +149,28 @@ footer a:hover {
     padding: 25px 10px;
   }
 }
+
+/* Основні стилі сайту — СВІТЛА ТЕМА */
+body {
+    background-color: #f4f4f9;
+    color: #333333;
+}
+
+/* Стилі карток для світлої теми */
+.review-card {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    color: #333333;
+}
+
+/* ТЕМНА ТЕМА */
+body.dark-mode {
+    background-color: #121212 !important;
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode .review-card {
+    background-color: #1e1e1e !important;
+    border-color: #444 !important;
+    color: #e0e0e0 !important;
+}

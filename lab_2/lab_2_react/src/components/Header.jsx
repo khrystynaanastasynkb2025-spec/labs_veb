@@ -1,17 +1,26 @@
+import React from 'react';
 import myPhoto from '../assets/cvphoto.jpg';
 
-function Header({ lang, setLang }) {
+// Додаємо theme та toggleTheme у параметри компонента
+function Header({ lang, setLang, theme, toggleTheme }) {
   return (
     <header className="bg-gradient-to-r from-[#1b0c30] via-[#32103c] to-[#4a154b] p-8 border-b-2 border-[#8e44ad] relative">
-      {/* Кнопка перемикання мови у правому верхньому кутку */}
+
+      <button
+        onClick={toggleTheme}
+        className="absolute top-4 left-4 p-2 rounded-lg bg-purple-900/40 hover:bg-purple-900/70 text-purple-200 transition-all z-10 text-sm"
+      >
+        {theme === 'dark' ? '☀️ Світла тема' : '🌙 Темна тема'}
+      </button>
+
       <button
         onClick={() => setLang(lang === 'ua' ? 'en' : 'ua')}
-        className="absolute top-4 right-4 bg-[#2d203b] hover:bg-[#4a3565] text-[#d7bde2] font-bold px-3 py-1 rounded-lg border border-[#bb8fce] transition-all cursor-pointer"
+        className="absolute top-4 right-4 bg-[#2d203b] hover:bg-[#4a3565] text-[#d7bde2] font-bold px-3 py-1 rounded-lg border border-[#bb8fce] transition-all cursor-pointer z-10"
       >
         {lang === 'ua' ? 'EN 🇬🇧' : 'UA 🇺🇦'}
       </button>
 
-      <div className="max-w-2xl mx-auto flex flex-col sm:flex-row items-center gap-6">
+      <div className="max-w-2xl mx-auto flex flex-col sm:flex-row items-center gap-6 mt-6 sm:mt-0">
         <img
           src={myPhoto}
           alt="Христина Анастасин"
