@@ -6,7 +6,7 @@ function ContactForm2({ lang }) {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsOpen(true);
-    }, 3000);
+    }, 60000);
 
     return () => clearTimeout(timer); // Очищення таймера при розмонтуванні
   }, []);
