@@ -174,8 +174,3 @@ body.dark-mode .review-card {
     border-color: #444 !important;
     color: #e0e0e0 !important;
 }
-
-/* Зміна кольору заголовків */
-h1 {
-    color: #2563eb;
-}
