@@ -4,7 +4,7 @@ import Aboutme from './components/Aboutme';
 import Education from './components/Education';
 import Languages from './components/languages';
 import Experience from './components/Experience';
-import ContactForm from './components/contactForm';
+import ContactForm from './components/contactform';
 import Footer from './components/Footer';
 import Reviews from "./components/Reviews";
 import ContactForm2 from "./components/ContactForm2";
